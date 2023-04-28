@@ -17,6 +17,14 @@ body {
     color: hsl(215, 51%, 70%);
 }
 
+main {
+    margin: 0;
+    height: 0;
+    display: flex;
+    height: fit-content;
+}
+
+
 p {
     font-size: 18px;
 }
@@ -30,8 +38,9 @@ p {
 .container {
     background-color: hsl(216, 50%, 16%);
     margin: 2rem;
-    max-width: 435px;
-    max-height: 670px;
+    max-width: 415px;
+    max-height: 800px;
+    letter-spacing: 1px;
 }
 
 .img__box {
