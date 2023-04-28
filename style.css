@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
 
+html, body {
+    height: 100%;
+}
 
 body {
     background-color: hsl(217, 54%, 11%);
     box-sizing: border-box;
-    height: 100vh;
     margin: 0;
     padding: 0;
     display: flex;
@@ -27,9 +29,9 @@ p {
 
 .container {
     background-color: hsl(216, 50%, 16%);
-    height: min(60%, 564px);
-    width: min(90%, 337.5px);
     margin: 2rem;
+    max-width: 435px;
+    max-height: 670px;
 }
 
 .img__box {
@@ -133,8 +135,5 @@ p {
         cursor: pointer;
         color: hsl(178, 100%, 50%);
     }
-
-
-
 
 }
