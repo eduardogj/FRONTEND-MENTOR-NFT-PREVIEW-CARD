@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    box-sizing: border-box;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Outfit', sans-serif;
+    color: hsl(215, 51%, 70%);
+}
+
+p {
+    font-size: 18px;
+}
+
+.content, .info, .creation {
+    margin: 4% 8%;
+}
+
+/* CONTAINER */
+
+.container {
+    background-color: hsl(216, 50%, 16%);
+    height: min(60%, 564px);
+    width: min(90%, 337.5px);
+    margin: 2rem;
+}
+
+.img__box {
+    margin: 8%;
+    overflow: hidden;
+    position: relative;
+}
+
+.container, .img__box img {
+    border-radius: 12px;
+}
+
+.img__box img {
+    height: 50%;
+    width: 100%;
+}
+
+.img__box span img {
+    width: 3rem;
+    height: 2.3rem;
+}
+
+.img__box span.active {
+    position: absolute;
+    background-color: hsla(178, 100%, 50%, 0.432);
+    width: 100%;
+    height: 99%;
+    border-radius: 12px;
+    display: none;
+}
+
+/* CONTENT */
+
+.content h2 {
+    color:hsl(0, 0%, 100%)
+}
+
+.content p {
+    font-size: 16px;
+    font-weight: 300;
+    vertical-align: middle;
+}
+
+/* INFO */
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+.info div span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info div span>img {
+    margin-right: 0.5rem;
+}
+
+.info .eth {
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+/* CREATION */
+
+.creation {
+    display: flex;
+    align-items: center;
+}
+
+.creation p {
+    font-size: 16px;
+}
+
+.creation p span {
+    color:hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.creation img {
+    width: 2.2rem;
+    height: 2.1rem;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+@media (width >= 992px) {
+
+    .img__box:hover > span.active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .active:hover {
+        cursor: pointer;
+        color: hsl(178, 100%, 50%);
+    }
+
+
+
+
+}
