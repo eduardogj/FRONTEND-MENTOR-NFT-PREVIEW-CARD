@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -9,28 +10,17 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     font-family: 'Outfit', sans-serif;
     color: hsl(215, 51%, 70%);
 }
 
-main {
-    margin: 0;
-    height: 0;
-    display: flex;
-    height: fit-content;
-}
-
-
 p {
     font-size: 18px;
-}
-
-.content, .info, .creation {
-    margin: 4% 8%;
 }
 
 /* CONTAINER */
@@ -39,17 +29,17 @@ p {
     background-color: hsl(216, 50%, 16%);
     margin: 2rem;
     max-width: 415px;
-    max-height: 800px;
+    padding: 2rem;
     letter-spacing: 1px;
 }
 
 .img__box {
-    margin: 8%;
     overflow: hidden;
     position: relative;
 }
 
-.container, .img__box img {
+.container,
+.img__box img {
     border-radius: 12px;
 }
 
@@ -74,8 +64,9 @@ p {
 
 /* CONTENT */
 
-.content h2 {
-    color:hsl(0, 0%, 100%)
+.content h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5rem;
 }
 
 .content p {
@@ -91,7 +82,7 @@ p {
     border-bottom: 1px solid hsl(215, 32%, 27%);
 }
 
-.info div span{
+.info div span {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,7 +105,7 @@ p {
 }
 
 .creation p span {
-    color:hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 100%);
     cursor: pointer;
 }
 
@@ -126,9 +117,9 @@ p {
     margin-right: 1rem;
 }
 
-@media (width >= 992px) {
+@media (width >=992px) {
 
-    .img__box:hover > span.active {
+    .img__box:hover>span.active {
         display: flex;
         justify-content: center;
         align-items: center;
